@@ -1,0 +1,15 @@
+{
+  "name": "ahfowbot",
+  "version": "1.0.0",
+  "description": "Twitter bot for ahfow",
+  "main": "index.js",
+  "dependencies": {
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andy Aldridge",
+  "license": "ISC"
+}
