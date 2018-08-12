@@ -5,7 +5,6 @@
   "main": "index.js",
   "start": "index.js",
   "dependencies": {
-    "express": "^4.16.3",
     "twit": "^2.2.11"
   },
   "devDependencies": {},
