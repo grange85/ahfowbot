@@ -2,7 +2,7 @@ const fs = require('fs');
 const twit = require('twit');
 
 
-var cred = JSON.parse(fs.readFileSync('credentials.json'));
+//var cred = JSON.parse(fs.readFileSync('credentials.json'));
 //console.log(cred.consumer_key);
 
 var t = new twit({
