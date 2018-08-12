@@ -3,7 +3,7 @@ const twit = require('twit');
 const readline = require('readline');
 const {google} = require('googleapis');
 
-if (!isHeroku()){
+if (process.env.HEROKU !== true){
   var cred = JSON.parse(fs.readFileSync('credentials.json'));
 }
 
@@ -26,8 +26,3 @@ stream.on('tweet', function(tweet){
           });
 });
 
-
-function isHeroku()
-{
-  return process.env.NODE && ~process.env.NODE.indexOf("heroku") ? true : false;
-}
