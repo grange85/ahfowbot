@@ -13,11 +13,14 @@ var t = new twit({
 });
 
 var users = ['12265892', '15354314', '521522434'];
+var keywords = ['ahfow', '@ahfow', 'ahfowbot', '@ahfowbot']
 var ahfowbot = '932023965522059269';
 
-var stream = t.stream('statuses/filter', {follow: users});
+const stream = t.stream('statuses/filter', {track: keywords});
 
 stream.on('tweet', function(tweet){
-//  console.log(tweet);
+ t.post('favorites/create', { id: tweet.id_str }, function (err, data, response) {
+            console.log(data)
+          });
 });
 
