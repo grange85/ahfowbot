@@ -5,7 +5,7 @@ const {google} = require('googleapis');
 
 console.log(process.env.HEROKU);
 
-if (process.env.HEROKU !== true){
+if (process.env.HEROKU !== "true"){
   var cred = JSON.parse(fs.readFileSync('credentials.json'));
   console.log('not Heroku');
 }
