@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Twitter bot for ahfow",
   "main": "index.js",
+  "start": "index.js",
   "dependencies": {
     "twit": "^2.2.11"
   },
@@ -11,5 +12,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Andy Aldridge",
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": "8.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/grange85/ahfowbot"
+  }
 }
