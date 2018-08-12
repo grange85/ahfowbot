@@ -18,7 +18,6 @@ var ahfowbot = '932023965522059269';
 var stream = t.stream('statuses/filter', {follow: users});
 
 stream.on('tweet', function(tweet){
-  if (users.indexOf(tweet.user.id_str) > -1) {
-    console.log(tweet.user.name + ' ' + tweet.text);
-  }
+//  console.log(tweet);
 });
+
