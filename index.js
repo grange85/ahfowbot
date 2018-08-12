@@ -3,8 +3,11 @@ const twit = require('twit');
 const readline = require('readline');
 const {google} = require('googleapis');
 
+console.log(process.env.HEROKU);
+
 if (process.env.HEROKU !== true){
   var cred = JSON.parse(fs.readFileSync('credentials.json'));
+  console.log('not Heroku');
 }
 
 var t = new twit({
